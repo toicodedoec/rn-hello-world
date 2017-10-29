@@ -7,23 +7,7 @@ import {
   Button
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text>HomeScreen</Text>
-        <Button
-          title="Go to PostScreen"
-          onPress={() => {
-            this.props.navigation.navigate('post');
-          }}
-        >
-        </Button>
-      </View>
-    )
-  }
-}
+import HomeScreen from './screens/HomeScreen';
 
 class PostScreen extends React.Component {
   render() {
