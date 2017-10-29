@@ -8,22 +8,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import HomeScreen from './screens/HomeScreen';
-
-class PostScreen extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text>PostScreen</Text>
-        <Button
-          title="Go to PostCommentsScreen"
-          onPress={() => {
-            this.props.navigation.navigate('postComments');
-          }}
-        />
-      </View>
-    )
-  }
-}
+import PostScreen from './screens/PostScreen';
 
 class PostCommentsScreen extends React.Component {
   render() {
